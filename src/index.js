@@ -113,8 +113,8 @@ class Game extends React.Component {
         <li>
           <button onClick={() => this.jumpTo(move)}>{desc}</button>
         </li>
-      )
-    })
+      );
+    });
 
     let status;
 
@@ -129,7 +129,7 @@ class Game extends React.Component {
         <div className="game-board">
           <Board 
             squares={current.squares}
-            onClick={(i) => this.handleClick()}
+            onClick={(i) => this.handleClick(i)}
           />
         </div>
         <div className="game-info">
